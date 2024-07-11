@@ -1,0 +1,28 @@
+Additional Amass Commands for Site Auditing
+•	Passive Enumeration
+
+amass enum -passive -d giftacareer.in -o ~/giftacareer_passive_subdomains.txt
+
+•	Brute Force Subdomain Discovery
+amass enum -brute -d giftacareer.in -o ~/giftacareer_bruteforce_subdomains.txt
+
+•	Recursive Enumeration
+amass enum -recursive -d giftacareer.in -o ~/giftacareer_recursive_subdomains.txt
+
+•	Use Specific Wordlist
+amass enum -d giftacareer.in -brute -w /path/to/wordlist.txt -o ~/giftacareer_wordlist_subdomains.txt
+
+•	ASN Enumeration
+amass intel -asn 16509 -o ~/giftacareer_asn_enum.txt
+
+•	Enumerate Domains for a Given AS Number
+amass intel -asn 44273 -o ~/giftacareer_asn_domains.txt
+
+
+•	Collect Domain Names from Certificate Transparency Logs
+amass intel -active -d giftacareer.in -src -include crtsh -o ~/giftacareer_cert_transparency.txt
+
+
+•	Use Specific Sources
+amass enum -d giftacareer.in -active -src -include sources.txt -o ~/giftacareer_specific_sour
+

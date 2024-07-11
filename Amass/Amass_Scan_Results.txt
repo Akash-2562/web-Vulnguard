@@ -1,0 +1,30 @@
+********************Amass input Code*******************
+amass enum -active -d giftacareer.in -o ~/giftacareer_active_subdomains.txt
+********************Amass output Code*******************
+giftacareer.in (FQDN) --> ns_record --> ns69.domaincontrol.com (FQDN)
+giftacareer.in (FQDN) --> ns_record --> ns70.domaincontrol.com (FQDN)
+www.giftacareer.in (FQDN) --> cname_record --> giftacareer.in (FQDN)
+giftacareer.in (FQDN) --> a_record --> 3.33.152.147 (IPAddress)
+giftacareer.in (FQDN) --> a_record --> 15.197.142.173 (IPAddress)
+ns69.domaincontrol.com (FQDN) --> a_record --> 97.74.104.45 (IPAddress)
+ns69.domaincontrol.com (FQDN) --> aaaa_record --> 2603:5:2184::2d (IPAddress)
+3.33.128.0/17 (Netblock) --> contains --> 3.33.152.147 (IPAddress)
+15.197.128.0/17 (Netblock) --> contains --> 15.197.142.173 (IPAddress)
+97.74.96.0/20 (Netblock) --> contains --> 97.74.104.45 (IPAddress)
+2603:5:2100::/40 (Netblock) --> contains --> 2603:5:2184::2d (IPAddress)
+16509 (ASN) --> managed_by --> AMAZON-02 - Amazon.com, Inc. (RIROrganization)
+16509 (ASN) --> announces --> 3.33.128.0/17 (Netblock)
+16509 (ASN) --> announces --> 15.197.128.0/17 (Netblock)
+44273 (ASN) --> managed_by --> DYNAMICNET (RIROrganization)
+44273 (ASN) --> announces --> 97.74.96.0/20 (Netblock)
+44273 (ASN) --> announces --> 2603:5:2100::/40 (Netblock)
+ns70.domaincontrol.com (FQDN) --> a_record --> 173.201.72.45 (IPAddress)
+ns70.domaincontrol.com (FQDN) --> aaaa_record --> 2603:5:2284::2d (IPAddress)
+173.201.64.0/20 (Netblock) --> contains --> 173.201.72.45 (IPAddress)
+44273 (ASN) --> announces --> 173.201.64.0/20 (Netblock)
+2603:5:2280::/44 (Netblock) --> contains --> 2603:5:2284::2d (IPAddress)
+44273 (ASN) --> managed_by --> GODADDY-DNS, DE (RIROrganization)
+44273 (ASN) --> announces --> 2603:5:2280::/44 (Netblock)
+
+The enumeration has finished
+
