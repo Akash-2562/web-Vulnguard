@@ -1,0 +1,42 @@
+********************Nikto input Code*******************
+
+└─# sudo nikto -host https://ccgac.bitrix24.site/
+
+********************Nikto output Code *******************
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          52.59.124.117
++ Target Hostname:    ccgac.bitrix24.site
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:        Subject:  /CN=*.bitrix24.site
+                   Altnames: *.bitrix24.site, bitrix24.site
+                   Ciphers:  ECDHE-RSA-AES128-GCM-SHA256
+                   Issuer:   /C=US/ST=Arizona/L=Scottsdale/O=GoDaddy.com, Inc./OU=http:\/\/certs.godaddy.com\/repository\//CN=Go Daddy Secure Certificate Authority - G2
++ Start Time:         2024-07-08 17:34:20 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Bitrix24.Sites
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: Uncommon header 'x-powered-cms' found, with contents: Bitrix24.Sites.
++ /: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ /qAgu2viE.php: Cookie USER_LANG created without the secure flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ /qAgu2viE.php: Cookie USER_LANG created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ /qAgu2viE.php: Cookie qmb created without the secure flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ /qAgu2viE.php: Cookie qmb created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ /qAgu2viE.php: Uncommon header 'x-bitrix24-user' found, with contents: 0.
++ /qAgu2viE.php: Uncommon header 'x-bitrix24-date' found, with contents: 1659542896.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /robots.txt: contains 2 entries which should be manually viewed. See: https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt
++ /: The Content-Encoding header is set to "deflate" which may mean that the server is vulnerable to the BREACH attack. See: http://breachattack.com/
++ Server is using a wildcard certificate: *.bitrix24.site. See: https://en.wikipedia.org/wiki/Wildcard_certificate
++ Multiple index files found: /index.html, /index.php.
++ ERROR: Error limit (20) reached for host, giving up. Last error: opening stream: ssl connect failed
++ Scan terminated: 20 error(s) and 14 item(s) reported on remote host
++ End Time:           2024-07-08 17:40:11 (GMT-4) (351 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+************************************************************************
