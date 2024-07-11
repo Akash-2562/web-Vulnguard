@@ -1,0 +1,25 @@
+Additional Owasp Zap Commands for Site Auditing
+Start OWASP ZAP in Headless Mode
+zap.sh -daemon -port 8080 -config api.key=YOUR_API_KEY
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY spider https://giftacareer.in
+Active Scan the Target Website
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY active-scan https://giftacareer.in
+Start OWASP ZAP with a Specific Session
+zap.sh -session /path/to/your/session.session -port 8080 -config api.key=YOUR_API_KEY
+Generate HTML Report
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY report -o zap_report.html -f html
+Generate XML Report
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY report -o zap_report.xml -f xml
+View Alerts
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY alerts
+
+Shutdown ZAP
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY shutdown
+
+Use Contexts for Scanning
+Create a context file:
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY context import /path/to/context.context
+Use the context for a spider scan:
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY spider -c contextName https://giftacareer.in
+Use the context for an active scan:
+zap-cli --zap-url http://localhost:8080 --api-key YOUR_API_KEY active-scan -c contextName https
