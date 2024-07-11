@@ -1,0 +1,56 @@
+********************Arachni input Code*******************
+nmap -p 80 15.197.142.173
+********************Arachni Output Code*******************
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-06-14 08:52 EDT
+Nmap scan report for a4ec4c6ea1c92e2e6.awsglobalaccelerator.com (15.197.142.173)
+Host is up (0.023s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.36 seconds
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-06-14 08:55 EDT
+Nmap scan report for a4ec4c6ea1c92e2e6.awsglobalaccelerator.com (15.197.142.173)
+Host is up (0.025s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    awselb/2.0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94%I=7%D=6/14%Time=666C3DCE%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,10A,"HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0\r\n
+SF:Date:\x20Fri,\x2014\x20Jun\x202024\x2012:55:44\x20GMT\r\nContent-Type:\
+SF:x20text/html\r\nContent-Length:\x20118\r\nConnection:\x20close\r\n\r\n<
+SF:html>\r\n<head><title>403\x20Forbidden</title></head>\r\n<body>\r\n<cen
+SF:ter><h1>403\x20Forbidden</h1></center>\r\n</body>\r\n</html>\r\n")%r(HT
+SF:TPOptions,10A,"HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0\
+SF:r\nDate:\x20Fri,\x2014\x20Jun\x202024\x2012:55:45\x20GMT\r\nContent-Typ
+SF:e:\x20text/html\r\nContent-Length:\x20118\r\nConnection:\x20close\r\n\r
+SF:\n<html>\r\n<head><title>403\x20Forbidden</title></head>\r\n<body>\r\n<
+SF:center><h1>403\x20Forbidden</h1></center>\r\n</body>\r\n</html>\r\n")%r
+SF:(RTSPRequest,7A,"<html>\r\n<head><title>400\x20Bad\x20Request</title></
+SF:head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<
+SF:/body>\r\n</html>\r\n")%r(X11Probe,110,"HTTP/1\.1\x20400\x20Bad\x20Requ
+SF:est\r\nServer:\x20awselb/2\.0\r\nDate:\x20Fri,\x2014\x20Jun\x202024\x20
+SF:12:55:45\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122
+SF:\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Re
+SF:quest</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1
+SF:></center>\r\n</body>\r\n</html>\r\n")%r(FourOhFourRequest,10A,"HTTP/1\
+SF:.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0\r\nDate:\x20Fri,\x2014
+SF:\x20Jun\x202024\x2012:55:46\x20GMT\r\nContent-Type:\x20text/html\r\nCon
+SF:tent-Length:\x20118\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><tit
+SF:le>403\x20Forbidden</title></head>\r\n<body>\r\n<center><h1>403\x20Forb
+SF:idden</h1></center>\r\n</body>\r\n</html>\r\n")%r(RPCCheck,110,"HTTP/1\
+SF:.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Fri,\
+SF:x2014\x20Jun\x202024\x2012:55:51\x20GMT\r\nContent-Type:\x20text/html\r
+SF:\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n<html>\r\n<head
+SF:><title>400\x20Bad\x20Request</title></head>\r\n<body>\r\n<center><h1>4
+SF:00\x20Bad\x20Request</h1></center>\r\n</body>\r\n</html>\r\n")%r(DNSVer
+SF:sionBindReqTCP,110,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20aw
+SF:selb/2\.0\r\nDate:\x20Fri,\x2014\x20Jun\x202024\x2012:55:51\x20GMT\r\nC
+SF:ontent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20c
+SF:lose\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title></head>
+SF:\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n</body
+SF:>\r\n</html>\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 24.68 seconds

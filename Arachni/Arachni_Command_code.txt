@@ -1,0 +1,55 @@
+Additional Arachni Commands for Site Auditing:-
+
+Basic Scan Command
+This command runs a basic scan on the target website and outputs the results in a specified format.
+arachni http://giftacareer.in --output-only-positives --report-save-path ~/arachni_report.afr
+Full Scan with All Checks Enabled
+This command runs a comprehensive scan with all checks enabled and saves the report.
+arachni http://giftacareer.in --checks=* --report-save-path ~/arachni_full_report.afr
+Scan with a Specific User Agent
+This command sets a specific user agent for the scan.
+arachni http://giftacareer.in --http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --report-save-path ~/arachni_user_agent_report.afr
+Scan with Authentication
+If the target site requires authentication, you can specify the login details.
+arachni http://giftacareer.in --http-authentication-username="your_username" --http-authentication-password="your_password" --report-save-path ~/arachni_auth_report.afr
+
+
+Scan with Proxy
+If you need to run the scan through a proxy, you can specify the proxy details.
+arachni http://giftacareer.in --http-proxy="http://127.0.0.1:8080" --report-save-path ~/arachni_proxy_report.afr
+Scan with Specified Timeout
+This command sets a timeout for the scan.
+sh
+Copy code
+arachni http://giftacareer.in --timeout=10:00:00 --report-save-path ~/arachni_timeout_report.afr
+Save Reports in Various Formats
+You can save the reports in different formats like HTML, JSON, and XML.
+# HTML format
+
+arachni http://giftacareer.in --report-save-path ~/arachni_report.afr
+arachni_reporter ~/arachni_report.afr --report=html:~/arachni_report.html
+
+# JSON format
+
+arachni_reporter ~/arachni_report.afr --report=json:~/arachni_report.json
+
+# XML format
+
+arachni_reporter ~/arachni_report.afr --report=xml:~/arachni_report.xml
+Run a Specific Plugin
+You can specify a plugin to run during the scan.
+arachni http://giftacareer.in --plugin="autothrottle" --report-save-path ~/arachni_plugin_report.afr
+Advanced Scan with Fine-Tuned Options
+This command includes various advanced options for a more customized scan.
+arachni http://giftacareer.in \
+--http-request-concurrency=10 \
+--http-request-timeout=5000 \
+--scope-auto-redundant=2 \
+--audit-links \
+--audit-forms \
+--audit-cookies \
+--audit-headers \
+--audit-jsons \
+--audit-xmls \
+--report-save-path ~/arachni_advanced_report.afr
+
