@@ -1,0 +1,37 @@
+Basic Scan:
+sudo nikto -h http://example.com -output nikto_scan_results.txt
+
+SSL Scan:
+sudo nikto -h https://example.com -output nikto_ssl_scan_results.txt
+
+Tuning Options (e.g., for SQL Injection tests only):
+sudo nikto -h http://example.com -Tuning 9 -output nikto_sql_scan_results.txt
+
+Check All CGI Directories:
+sudo nikto -h http://example.com -C all -output nikto_cgi_scan_results.txt
+
+Specific Plugins:
+sudo nikto -h http://example.com -Plugins tests -output nikto_plugins_scan_results.txt
+
+Include IP in Host Header (Useful for Host Header Injection):
+sudo nikto -h http://example.com -useproxy http://127.0.0.1:8080 -output nikto_proxy_scan_results.txt
+
+Verbose Output:
+sudo nikto -h http://example.com -output nikto_verbose_scan_results.txt -Display V
+
+Save Reports in Various Formats:------------------------
+
+HTML:
+sudo nikto -h http://example.com -Format html -output nikto_html_scan_results.html
+
+XML:
+sudo nikto -h http://example.com -Format xml -output nikto_xml_scan_results.xml
+
+CSV:
+sudo nikto -h http://example.com -Format csv -output nikto_csv_scan_results.csv
+
+Specify User Agent:
+sudo nikto -h http://example.com -useragent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" -output nikto_useragent_scan_results.txt
+
+Set Timeout:
+sudo nikto -h http://example.com -timeout 10 -output nikto_timeout_scan_resu
