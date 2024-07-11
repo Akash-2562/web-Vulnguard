@@ -1,0 +1,20 @@
+Whois Commands:-
+
+Whois Lookup with Specific Whois Server
+whois -h whois.godaddy.com giftacareer.in
+Whois Lookup for IP Address
+whois 3.33.152.147
+Whois Lookup with Verbose Output
+whois -v giftacareer.in
+Save Whois Output to a File
+whois giftacareer.in > ~/giftacareer_whois.txt
+Display only Registrant Information
+whois giftacareer.in | grep -i "registrant"
+Display only Nameserver Information
+whois giftacareer.in | grep -i "name server"
+Display Creation and Expiry Dates
+whois giftacareer.in | grep -i "creation\|expiry"
+Query Multiple Domains
+for domain in example.com example.net example.org; do whois $domain; done
+Using JSON Output with jq for Parsing
+whois -J giftacareer.in | jq
